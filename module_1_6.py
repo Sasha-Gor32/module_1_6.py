@@ -1,10 +1,15 @@
-my_dict = {'Илья': 2004, 'Вика': 2001}
-my_dict['Маша'] = 2004
-my_dict['Саша'] = 2006
-del my_dict['Вика']
-
+my_dict = {"Yaroslav":2001,"Igor":2003,"Dima":2000}
 print(my_dict)
-my_set = {23,23, 'Арбуз','Арбуз', 4.13, 4.13}
-my_set.update ({'Малина', 36})
-print(my_set.remove (4.13))
+print(my_dict.get("Dima"))
+print(my_dict.get("Victor"))
+my_dict.update({"Misha":1998,"Ruslan":1999})
+a = my_dict.pop(('Igor'))
+print(a)
+print(my_dict)
+print('\n')
+my_set = {5,6,9,5,9,4,3,5,6,6,True,'blue',True,'blue'}
+print(my_set)
+my_set.add((88,99,100))
+my_set.add(7)
+my_set.remove(3)
 print(my_set)
